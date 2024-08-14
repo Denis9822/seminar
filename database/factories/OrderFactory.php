@@ -18,7 +18,7 @@ class OrderFactory extends Factory
     {
         return [
             'title' => fake()->realText(),
-            'created_at' => fake()->dateTimeBetween(now()->subDays(60),now()),
+            'created_at' => fake()->dateTimeBetween(now()->subDays(60), now()),
         ];
     }
 }

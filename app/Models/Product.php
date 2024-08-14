@@ -15,6 +15,7 @@ class Product extends Model
     {
         return $this->belongsToMany(Order::class);
     }
+
     public function scopePopular(Builder $query): void
     {
         $query->withCount(['orders' => function (Builder $query) {
